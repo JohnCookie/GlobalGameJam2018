@@ -20,4 +20,20 @@ public class PlayerCtrl : MonoBehaviour {
 		}
 		bodyRigid.velocity = new Vector3 (Input.GetAxis ("Horizontal") * spd, bodyRigid.velocity.y, Input.GetAxis ("Vertical") * spd);
 	}
+
+	void OnCollisionEnter(Collision col){
+		if (col.gameObject.layer == LayerMask.NameToLayer ("Monster")) {
+			Debug.Log ("Lose");
+			Time.timeScale = 0f;
+		}
+	}
+
+	void OnTriggerEnter(Collider col){
+		if (col.gameObject.layer == LayerMask.NameToLayer ("Trigger")) {
+			TriggerItem item = col.gameObject.GetComponent<TriggerItem> ();
+			item.destroyRelatedObstacle ();
+
+			Destroy (col.gameObject);
+		}
+	}
 }

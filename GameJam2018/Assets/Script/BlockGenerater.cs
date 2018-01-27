@@ -13,18 +13,20 @@ public class BlockGenerater : MonoBehaviour
 	void Update ()
 	{
 		// timer
-		if (currTimeCount >= generateInterval) {
-			generateBlock ();
-			currTimeCount -= generateInterval;
-		} else {
-			currTimeCount += Time.deltaTime;
-		}
+//		if (currTimeCount >= generateInterval) {
+//			generateBlock ();
+//			currTimeCount -= generateInterval;
+//		} else {
+//			currTimeCount += Time.deltaTime;
+//		}
 	}
 
-	void generateBlock(){
+	public GameObject generateBlock(){
 		GameObject blockObj = Instantiate (blockPrefab) as GameObject;
 		blockObj.transform.SetParent (blockParent);
 		blockObj.transform.localPosition = new Vector3 (Random.Range (-9f, 9f), 0f, Random.Range (-9f, 9f));
+
+		return blockObj;
 	}
 }
 

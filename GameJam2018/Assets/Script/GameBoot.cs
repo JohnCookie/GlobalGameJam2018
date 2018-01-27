@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class GameBoot : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class GameBoot : MonoBehaviour
 	public CameraSplitCtrl cameraSplitCtrl;
 	public TriggerGenerater triggerGenerator;
 	public MonsterGenerator monsterGenerator;
+	public GameObject loseObj;
 
 	void Update(){
 		if (currTimeCount >= splitInterval) {
@@ -29,6 +31,15 @@ public class GameBoot : MonoBehaviour
 
 	public void combineOnce(int worldId){
 		cameraSplitCtrl.combineCamera (worldId);
+	}
+
+	public void showLose(){
+		loseObj.SetActive (true);
+		Time.timeScale = 0f;
+	}
+	public void backToLogo(){
+		Time.timeScale = 1f;
+		SceneManager.LoadScene (0);
 	}
 }
 

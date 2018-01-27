@@ -25,8 +25,7 @@ public class PlayerCtrl : MonoBehaviour {
 
 	void OnCollisionEnter(Collision col){
 		if (col.gameObject.tag == "Monster") {
-//			Debug.Log ("Lose");
-//			Time.timeScale = 0f;
+			gameBoot.showLose ();
 		}
 	}
 

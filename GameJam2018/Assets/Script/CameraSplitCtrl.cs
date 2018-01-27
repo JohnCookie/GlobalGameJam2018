@@ -93,6 +93,9 @@ public class CameraSplitCtrl : MonoBehaviour
 	public Camera camera16_15;
 	public Camera camera16_16;
 
+	public PlayerCtrl player;
+	Vector3 cameraToPlayerOffset = new Vector3(0, 20f, 0);
+
 	// Use this for initialization
 	void Start ()
 	{
@@ -103,20 +106,7 @@ public class CameraSplitCtrl : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-//		if (Input.GetKeyUp (KeyCode.Q)) {
-//			splitCamera ();
-//		}
-//		if (Input.GetKeyUp (KeyCode.E)) {
-//			combineCamera ();
-//		}
-//
-//		// timer
-//		if (currTimeCount >= splitInterval) {
-//			splitCamera ();
-//			currTimeCount -= splitInterval;
-//		} else {
-//			currTimeCount += Time.deltaTime;
-//		}
+		followCamera ();
 	}
 
 	public int getNextWorldId(){
@@ -623,6 +613,52 @@ public class CameraSplitCtrl : MonoBehaviour
 		camera.cullingMask &= ~(1<<LayerMask.NameToLayer("Monster4"));
 		camera.cullingMask &= ~(1<<LayerMask.NameToLayer("Monster8"));
 		camera.cullingMask &= ~(1<<LayerMask.NameToLayer("Monster16"));
+	}
+
+	void followCamera(){
+		switch (currCameraNum) {
+		case 1:
+			camera1_1.transform.position = player.transform.position + cameraToPlayerOffset;
+			break;
+		case 2:
+			camera2_1.transform.position = player.transform.position + cameraToPlayerOffset;
+			camera2_2.transform.position = player.transform.position + cameraToPlayerOffset;
+			break;
+		case 4:
+			camera4_1.transform.position = player.transform.position + cameraToPlayerOffset;
+			camera4_2.transform.position = player.transform.position + cameraToPlayerOffset;
+			camera4_3.transform.position = player.transform.position + cameraToPlayerOffset;
+			camera4_4.transform.position = player.transform.position + cameraToPlayerOffset;
+			break;
+		case 8:
+			camera8_1.transform.position = player.transform.position + cameraToPlayerOffset;
+			camera8_2.transform.position = player.transform.position + cameraToPlayerOffset;
+			camera8_3.transform.position = player.transform.position + cameraToPlayerOffset;
+			camera8_4.transform.position = player.transform.position + cameraToPlayerOffset;
+			camera8_5.transform.position = player.transform.position + cameraToPlayerOffset;
+			camera8_6.transform.position = player.transform.position + cameraToPlayerOffset;
+			camera8_7.transform.position = player.transform.position + cameraToPlayerOffset;
+			camera8_8.transform.position = player.transform.position + cameraToPlayerOffset;
+			break;
+		case 16:
+			camera16_1.transform.position = player.transform.position + cameraToPlayerOffset;
+			camera16_2.transform.position = player.transform.position + cameraToPlayerOffset;
+			camera16_3.transform.position = player.transform.position + cameraToPlayerOffset;
+			camera16_4.transform.position = player.transform.position + cameraToPlayerOffset;
+			camera16_5.transform.position = player.transform.position + cameraToPlayerOffset;
+			camera16_6.transform.position = player.transform.position + cameraToPlayerOffset;
+			camera16_7.transform.position = player.transform.position + cameraToPlayerOffset;
+			camera16_8.transform.position = player.transform.position + cameraToPlayerOffset;
+			camera16_9.transform.position = player.transform.position + cameraToPlayerOffset;
+			camera16_10.transform.position = player.transform.position + cameraToPlayerOffset;
+			camera16_11.transform.position = player.transform.position + cameraToPlayerOffset;
+			camera16_12.transform.position = player.transform.position + cameraToPlayerOffset;
+			camera16_13.transform.position = player.transform.position + cameraToPlayerOffset;
+			camera16_14.transform.position = player.transform.position + cameraToPlayerOffset;
+			camera16_15.transform.position = player.transform.position + cameraToPlayerOffset;
+			camera16_16.transform.position = player.transform.position + cameraToPlayerOffset;
+			break;
+		}
 	}
 }
 

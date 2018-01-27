@@ -7,6 +7,8 @@ public class BlockGenerater : MonoBehaviour
 	public GameObject blockPrefab;
 	public Transform blockParent;
 
+	public CameraSplitCtrl cameraCtrl;
+
 	float currTimeCount = 0f;
 	
 	// Update is called once per frame
@@ -25,7 +27,8 @@ public class BlockGenerater : MonoBehaviour
 		GameObject blockObj = Instantiate (blockPrefab) as GameObject;
 		blockObj.transform.SetParent (blockParent);
 		blockObj.transform.localPosition = new Vector3 (Random.Range (-9f, 9f), 0f, Random.Range (-9f, 9f));
-
+		blockObj.layer = LayerMask.NameToLayer ("Obstacle" + cameraCtrl.justAddWorldId);
+		blockObj.GetComponent<BlockItem> ().Init (cameraCtrl.justAddWorldId);
 		return blockObj;
 	}
 }

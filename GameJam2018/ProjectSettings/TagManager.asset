@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Monster
+  - Obstacle
+  - Item
+  - Trigger
   layers:
   - Default
   - TransparentFX
@@ -13,21 +17,21 @@ TagManager:
   - UI
   - 
   - 
-  - Block
-  - Player
-  - Item
-  - Obstacle
-  - Monster
-  - Trigger
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Obstacle1
+  - Obstacle2
+  - Obstacle4
+  - Obstacle8
+  - Obstacle16
+  - Trigger1
+  - Trigger2
+  - Trigger4
+  - Trigger8
+  - Trigger16
+  - Monster1
+  - Monster2
+  - Monster4
+  - Monster8
+  - Monster16
   - 
   - 
   - 

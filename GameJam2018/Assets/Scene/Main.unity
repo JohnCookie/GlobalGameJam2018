@@ -291,7 +291,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &42763799
 Transform:
   m_ObjectHideFlags: 0
@@ -375,7 +375,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4286849535
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: a53adc201e1c90f43966babe7bf099df, type: 2}
   m_TargetDisplay: 0
@@ -439,7 +439,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 03ae8cde7c9842045aced9f16f447868, type: 2}
+  m_Material: {fileID: 2100000, guid: e8e33ac3017bb004fbe346a6f2f0039f, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
@@ -704,7 +704,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4294426111
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 5953e29a876be7e4c836f9058ba733a9, type: 2}
   m_TargetDisplay: 0
@@ -785,7 +785,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4291449599
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: ae61d8381f62eb14889aa333a80c0377, type: 2}
   m_TargetDisplay: 0
@@ -849,7 +849,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 455c49d88e042ff409da92d27503a740, type: 2}
+  m_Material: {fileID: 2100000, guid: f06f1578d4f19734c86e8375856d91fd, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
@@ -865,6 +865,50 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!1 &245901012
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 245901014}
+  - component: {fileID: 245901013}
+  m_Layer: 9
+  m_Name: GameBoot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &245901013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 245901012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3cdc132732cb049a9a8543e2c69222, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  splitInterval: 8
+  cameraSplitCtrl: {fileID: 1322549789}
+  triggerGenerator: {fileID: 1341439200}
+  monsterGenerator: {fileID: 833937336}
+--- !u!4 &245901014
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 245901012}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.1809998, z: -0.15399933}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &251015685
 GameObject:
   m_ObjectHideFlags: 0
@@ -921,7 +965,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4286849535
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 7d7d14fce2d348f4297af6b9b1e38df8, type: 2}
   m_TargetDisplay: 0
@@ -1108,7 +1152,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &331652509
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1160,6 +1204,7 @@ MonoBehaviour:
   blockPrefab: {fileID: 1398861257691388, guid: f70a2d7d35547d9499324ddddbe75bc6,
     type: 2}
   blockParent: {fileID: 602068150}
+  cameraCtrl: {fileID: 1322549789}
 --- !u!4 &341139003
 Transform:
   m_ObjectHideFlags: 0
@@ -1299,7 +1344,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 455c49d88e042ff409da92d27503a740, type: 2}
+  m_Material: {fileID: 2100000, guid: 5f1b1809eebfdc547ae7132d3579a938, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
@@ -1408,7 +1453,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4288202495
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: bc67dc323b726b24b8f46ee7b64cf4fe, type: 2}
   m_TargetDisplay: 0
@@ -1489,7 +1534,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4288202495
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 05dc41a8d5ed9f34587f35f34a21120f, type: 2}
   m_TargetDisplay: 0
@@ -1570,7 +1615,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4290096639
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: caf3cea37f60c6046a979fccb2478b92, type: 2}
   m_TargetDisplay: 0
@@ -1780,7 +1825,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 71d59200e7997684499699dded893746, type: 2}
+  m_Material: {fileID: 2100000, guid: 5c113140f7f8e2a4d8169cce9b32dec1, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
@@ -1933,7 +1978,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4292261375
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 94be793dbef8ec841b2e1de224e57668, type: 2}
   m_TargetDisplay: 0
@@ -2029,7 +2074,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 8814160598ec1da4f84b6b4cb38acd56, type: 2}
+  m_Material: {fileID: 2100000, guid: a157b0d95f932424ebe86c89b0188ac8, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
@@ -2114,7 +2159,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4291179007
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 3eb4d54d6f378b74987c54858e1e1f38, type: 2}
   m_TargetDisplay: 0
@@ -2178,7 +2223,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 4655115f46c46304fb686ded880ae399, type: 2}
+  m_Material: {fileID: 2100000, guid: 76fe978eaa5c3b24ba4bc08429b342d0, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
@@ -2263,7 +2308,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4290096639
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 8fa641f88da3fff48a08b9f93a277b19, type: 2}
   m_TargetDisplay: 0
@@ -2344,7 +2389,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4293343743
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: dfd021b2fdde1374aa1fd1ba39f723f6, type: 2}
   m_TargetDisplay: 0
@@ -2408,7 +2453,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 87b1c461a3956ba4e8b489bae6340d82, type: 2}
+  m_Material: {fileID: 2100000, guid: 664032d09391b9d42b5eb7dc59cb65a5, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
@@ -2493,7 +2538,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4287120127
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 25d9a2d28fefbc94b90d906cf03ec0cd, type: 2}
   m_TargetDisplay: 0
@@ -2537,6 +2582,7 @@ MonoBehaviour:
     type: 2}
   monsterRoot: {fileID: 31393278}
   player: {fileID: 1591140303}
+  cameraCtrl: {fileID: 1322549789}
 --- !u!4 &833937337
 Transform:
   m_ObjectHideFlags: 0
@@ -2602,7 +2648,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 4655115f46c46304fb686ded880ae399, type: 2}
+  m_Material: {fileID: 2100000, guid: 2db16b9cdae42304eae14079c4abda7e, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
@@ -2670,7 +2716,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 9fee9a93229f3b64fb95735532e9b139, type: 2}
+  m_Material: {fileID: 2100000, guid: 48581775ea823e949b35beaf9895768d, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
@@ -2859,7 +2905,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4288202495
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 7e69a903c2eaa1342bc71095edfd9645, type: 2}
   m_TargetDisplay: 0
@@ -3005,7 +3051,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4290367231
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: f080458fdd92fe141b73dd5b7acbaa6d, type: 2}
   m_TargetDisplay: 0
@@ -3045,7 +3091,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 9fee9a93229f3b64fb95735532e9b139, type: 2}
+  m_Material: {fileID: 2100000, guid: c34e91875ca80e34f8dc527b6d591478, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
@@ -3137,7 +3183,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 03ae8cde7c9842045aced9f16f447868, type: 2}
+  m_Material: {fileID: 2100000, guid: a03ec681d72841f4fb39d5097449ff0d, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
@@ -3222,7 +3268,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4289014271
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 3b71072836e4aa7458b796963dd7b7ae, type: 2}
   m_TargetDisplay: 0
@@ -3303,7 +3349,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4286849535
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: cf9e8aa3982536842a411ddbb3e8f238, type: 2}
   m_TargetDisplay: 0
@@ -3471,7 +3517,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 8814160598ec1da4f84b6b4cb38acd56, type: 2}
+  m_Material: {fileID: 2100000, guid: 8e0b7dd01935324498b34225ed511c54, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
@@ -3502,7 +3548,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1322549789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3515,6 +3561,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   splitInterval: 5
+  currCameraNum: 1
+  currLiveWorldId: 
+  justAddWorldId: 1
   image1_1: {fileID: 1051632218}
   image2_1: {fileID: 650524766}
   image2_2: {fileID: 1786312676}
@@ -3556,6 +3605,37 @@ MonoBehaviour:
   cameraFor4: {fileID: 689155960}
   cameraFor8: {fileID: 943634458}
   cameraFor16: {fileID: 88214504}
+  camera1_1: {fileID: 251015688}
+  camera2_1: {fileID: 1639748730}
+  camera2_2: {fileID: 1528663807}
+  camera4_1: {fileID: 68461004}
+  camera4_2: {fileID: 1954831672}
+  camera4_3: {fileID: 1531718376}
+  camera4_4: {fileID: 513292748}
+  camera8_1: {fileID: 1287811437}
+  camera8_2: {fileID: 2124391321}
+  camera8_3: {fileID: 1615258049}
+  camera8_4: {fileID: 549033615}
+  camera8_5: {fileID: 1279253025}
+  camera8_6: {fileID: 1758384445}
+  camera8_7: {fileID: 555492465}
+  camera8_8: {fileID: 1444372418}
+  camera16_1: {fileID: 1372500866}
+  camera16_2: {fileID: 823067297}
+  camera16_3: {fileID: 1880161680}
+  camera16_4: {fileID: 1121493205}
+  camera16_5: {fileID: 1503078088}
+  camera16_6: {fileID: 2141704000}
+  camera16_7: {fileID: 767817533}
+  camera16_8: {fileID: 1184610802}
+  camera16_9: {fileID: 705790192}
+  camera16_10: {fileID: 191572906}
+  camera16_11: {fileID: 676883813}
+  camera16_12: {fileID: 2016582286}
+  camera16_13: {fileID: 802275674}
+  camera16_14: {fileID: 1716042515}
+  camera16_15: {fileID: 158018115}
+  camera16_16: {fileID: 1734740560}
 --- !u!4 &1322549790
 Transform:
   m_ObjectHideFlags: 0
@@ -3654,7 +3734,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 71d59200e7997684499699dded893746, type: 2}
+  m_Material: {fileID: 2100000, guid: c3893e73e97fdcf4b93adc80890e383c, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
@@ -3702,6 +3782,7 @@ MonoBehaviour:
     type: 2}
   triggerRoot: {fileID: 602068150}
   blockGenerater: {fileID: 341139002}
+  cameraCtrl: {fileID: 1322549789}
 --- !u!4 &1341439201
 Transform:
   m_ObjectHideFlags: 0
@@ -3801,7 +3882,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 56a7abc449b89b14982f85a078e2b121, type: 2}
+  m_Material: {fileID: 2100000, guid: eadb973e31e61b648b892a6baced966b, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
@@ -3886,7 +3967,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4286849535
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: cad17e34adda89a46a5bf91d31296378, type: 2}
   m_TargetDisplay: 0
@@ -3915,7 +3996,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1379701926
 Transform:
   m_ObjectHideFlags: 0
@@ -4048,7 +4129,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4290367231
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 491d309622469f04e84dbd09d2076890, type: 2}
   m_TargetDisplay: 0
@@ -4248,7 +4329,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 56a7abc449b89b14982f85a078e2b121, type: 2}
+  m_Material: {fileID: 2100000, guid: 36826a702bec38f4192c7d493caeea3c, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
@@ -4333,7 +4414,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4289284607
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: d6297dd7c6311034bbe5d0cc9293099b, type: 2}
   m_TargetDisplay: 0
@@ -4482,7 +4563,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4287120127
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 1ccc46015216aa246bebe5c1d9159508, type: 2}
   m_TargetDisplay: 0
@@ -4563,7 +4644,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4287931903
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 5ca9f0f1f806a074f84dd236b7e98e65, type: 2}
   m_TargetDisplay: 0
@@ -4588,9 +4669,9 @@ GameObject:
   - component: {fileID: 1591140299}
   - component: {fileID: 1591140303}
   - component: {fileID: 1591140304}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4676,6 +4757,7 @@ MonoBehaviour:
   spd: 8
   jumpHeight: 5
   bodyRigid: {fileID: 1591140304}
+  gameBoot: {fileID: 245901013}
 --- !u!54 &1591140304
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4841,7 +4923,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 6435c661f644c5148a05114bd7ec8091, type: 2}
+  m_Material: {fileID: 2100000, guid: 691a4f4bb478ff34497f8bb7b820562c, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
@@ -4926,7 +5008,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4287931903
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 292fdb0beab06d94b9293e8d2c99ccd2, type: 2}
   m_TargetDisplay: 0
@@ -5007,7 +5089,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4286849535
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 2570154831e895a43aee58dbfff5104f, type: 2}
   m_TargetDisplay: 0
@@ -5071,7 +5153,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 905b546c93647dc46aa3e13361ce2ff2, type: 2}
+  m_Material: {fileID: 2100000, guid: 469dc79382ecb3940a9858bad8d8fdc2, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
@@ -5224,7 +5306,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4293614335
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 39b19fd1a6b9b414cb7b10a4613942bc, type: 2}
   m_TargetDisplay: 0
@@ -5305,7 +5387,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4294696703
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 1f99f80950a775f40a5b3c69362a6ed3, type: 2}
   m_TargetDisplay: 0
@@ -5496,7 +5578,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4289284863
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 8764081f4ea7a1e47b8989c9755b73c4, type: 2}
   m_TargetDisplay: 0
@@ -5713,7 +5795,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4287931903
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: e049ca583fa29cd47a1d8f38978f0f0c, type: 2}
   m_TargetDisplay: 0
@@ -5815,7 +5897,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 6435c661f644c5148a05114bd7ec8091, type: 2}
+  m_Material: {fileID: 2100000, guid: fa2952ec2a5e0a540b0d489d0d60a62b, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
@@ -5900,7 +5982,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4287120127
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 60991b67e21f6c3429086a3ca6e1045c, type: 2}
   m_TargetDisplay: 0
@@ -5981,7 +6063,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4292531967
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: cd6b8cb9e8ecc36478683b39f88b874f, type: 2}
   m_TargetDisplay: 0
@@ -6045,7 +6127,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 905b546c93647dc46aa3e13361ce2ff2, type: 2}
+  m_Material: {fileID: 2100000, guid: da568f95303360849bedafffe9be0662, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
@@ -6113,7 +6195,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 87b1c461a3956ba4e8b489bae6340d82, type: 2}
+  m_Material: {fileID: 2100000, guid: 5c1219045b2d92741969c16d8b4962f0, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
@@ -6198,7 +6280,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4287120127
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 1e245909ccb83fa49903765e9333510b, type: 2}
   m_TargetDisplay: 0
@@ -6279,7 +6361,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4289284863
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: fbb0ae2071d812a49b79c7a96b675ee8, type: 2}
   m_TargetDisplay: 0

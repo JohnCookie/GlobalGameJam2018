@@ -7,6 +7,8 @@ public class PlayerCtrl : MonoBehaviour {
 	public float jumpHeight = 5f;
 	public Rigidbody bodyRigid;
 
+	public GameBoot gameBoot;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -22,18 +24,20 @@ public class PlayerCtrl : MonoBehaviour {
 	}
 
 	void OnCollisionEnter(Collision col){
-		if (col.gameObject.layer == LayerMask.NameToLayer ("Monster")) {
-			Debug.Log ("Lose");
-			Time.timeScale = 0f;
+		if (col.gameObject.tag == "Monster") {
+//			Debug.Log ("Lose");
+//			Time.timeScale = 0f;
 		}
 	}
 
 	void OnTriggerEnter(Collider col){
-		if (col.gameObject.layer == LayerMask.NameToLayer ("Trigger")) {
+		if (col.gameObject.tag == "Trigger") {
 			TriggerItem item = col.gameObject.GetComponent<TriggerItem> ();
 			item.destroyRelatedObstacle ();
 
 			Destroy (col.gameObject);
+
+			gameBoot.combineOnce (item.worldId);
 		}
 	}
 }

@@ -7,6 +7,7 @@ public class MonsterGenerator : MonoBehaviour
 	public GameObject monsterPrefab;
 	public Transform monsterRoot;
 	public PlayerCtrl player;
+	public CameraSplitCtrl cameraCtrl;
 
 	float currTimeCount = 0f;
 
@@ -14,19 +15,20 @@ public class MonsterGenerator : MonoBehaviour
 	void Update ()
 	{
 		// timer
-		if (currTimeCount >= generateInterval) {
-			generateBlock ();
-			currTimeCount -= generateInterval;
-		} else {
-			currTimeCount += Time.deltaTime;
-		}
+//		if (currTimeCount >= generateInterval) {
+//			generateMonster ();
+//			currTimeCount -= generateInterval;
+//		} else {
+//			currTimeCount += Time.deltaTime;
+//		}
 	}
 
-	void generateBlock(){
+	public void generateMonster(){
 		GameObject monsterObj = Instantiate (monsterPrefab) as GameObject;
 		monsterObj.transform.SetParent (monsterRoot);
 		monsterObj.transform.localPosition = new Vector3 (Random.Range (-9f, 9f), 0f, Random.Range (-9f, 9f));
-		monsterObj.GetComponent<SimpleMonster> ().Init (player);
+		monsterObj.layer = LayerMask.NameToLayer ("Monster" + cameraCtrl.justAddWorldId);
+		monsterObj.GetComponent<SimpleMonster> ().Init (player, cameraCtrl.justAddWorldId);
 	}
 }
 

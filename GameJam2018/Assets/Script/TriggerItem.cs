@@ -4,7 +4,12 @@ using System.Collections.Generic;
 
 public class TriggerItem : MonoBehaviour
 {
+	public int worldId = 1;
 	List<GameObject> relatiedObstacle = new List<GameObject> ();
+
+	public void Init(int world){
+		worldId = world;
+	}
 
 	public void addObstacle(GameObject obj){
 		relatiedObstacle.Add (obj);

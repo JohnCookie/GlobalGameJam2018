@@ -5,10 +5,14 @@ using System.Collections.Generic;
 public class TriggerItem : MonoBehaviour
 {
 	public int worldId = 1;
+	public int matIndex = 0;
 	List<GameObject> relatiedObstacle = new List<GameObject> ();
 
-	public void Init(int world){
+	public Material[] allColorMaterials;
+
+	public void Init(int world, int materialIndex){
 		worldId = world;
+		matIndex = materialIndex;
 	}
 
 	public void addObstacle(GameObject obj){

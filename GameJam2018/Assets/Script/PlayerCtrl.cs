@@ -8,6 +8,7 @@ public class PlayerCtrl : MonoBehaviour {
 	public Rigidbody bodyRigid;
 
 	public GameBoot gameBoot;
+	public MonsterGenerator monsterGenerator;
 
 	// Use this for initialization
 	void Start () {
@@ -35,8 +36,9 @@ public class PlayerCtrl : MonoBehaviour {
 			item.destroyRelatedObstacle ();
 
 			Destroy (col.gameObject);
+			monsterGenerator.removeMonsterByWorld (item.matIndex);
 
-			gameBoot.combineOnce (item.worldId);
+			gameBoot.combineOnce (item.worldId, item.matIndex);
 		}
 	}
 }
